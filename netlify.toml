@@ -1,0 +1,11 @@
+[build]
+    command = "echo No build command"
+    node_bundler = "esbuild"
+
+[dev]
+    node_bundler = "esbuild"
+
+[[redirects]]
+    from = "/*"
+    to = "/.netlify/functions/root"
+    status = 200
